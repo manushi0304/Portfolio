@@ -9,7 +9,7 @@ const projects = [
       "Using APTOS-2019 retinal images, we first benchmark six common backbones:(NASNetMobile, DenseNet121, EfficientNetV2B0, MobileNetV2, InceptionV3, ResNet50V2) and then deploy quantized feature-extractor variants (FP16/INT8/FP32) to reduce compute and model size while preserving accuracy. Our best hybrid DenseNet121 FP16 features with SVM achieve strong accuracy and F1 with markedly smaller footprints and fast inference, demonstrating a favourable accuracy efficiency trade-off suitable for deployment on point-of-care devices.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800",
-    tech: ["Keras", "Tensorflow", "CNNs",""],
+    tech: ["Keras", "Tensorflow", "CNNs"],
     github: "https://github.com/manushi0304/Diabetic-Retinopathy-Detection",
     // demo: "https://www.odunsi.xyz/",
   },
