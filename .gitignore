@@ -1,0 +1,26 @@
+cat >> .gitignore << 'EOF'
+# --- env secrets ---
+.env
+.env.*
+*.env
+*.env.*
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Node / Next / build
+node_modules
+.next
+dist
+out
+.cache
+pnpm-lock.yaml
+# keep only ONE lockfile; comment out the one you use
+# package-lock.json
+# yarn.lock
+
+# OS/editor
+.DS_Store
+*.log
+EOF
