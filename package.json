@@ -4,13 +4,16 @@
   "type": "module",
   "version": "0.1.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -k -n client,server -c magenta,cyan \"vite\" \"tsx watch server/index.ts\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/index.ts",
     "build": "vite build",
-    "preview": "vite preview",
-    "lint": "echo \"(Add ESLint if you want)\"",
+    "preview": "vite preview --port 5173",
+    "start": "tsx server/index.ts",
     "db:gen": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "lint": "echo \"(Add ESLint if you want)\""
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -42,6 +45,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tanstack/react-query": "^5.85.3",
+    "@vercel/node": "^5.3.24",
     "axios": "^1.11.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -101,5 +105,8 @@
   "main": "postcss.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.17"
+  }
 }

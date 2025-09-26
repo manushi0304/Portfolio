@@ -3,7 +3,7 @@ import { Heart, Mail, Calendar, Send, Coffee, MessageCircle } from "lucide-react
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
-const API_BASE = import.meta.env.VITE_API_URL || ""; // leave empty in dev (proxy handles it)
+const API_BASE = import.meta.env.VITE_API_URL || ""; 
 
 export default function ContactSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -145,7 +145,7 @@ export default function ContactSection() {
           <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
             <Button asChild size="lg" data-testid="button-send-email" className="pulse-glow">
               <a
-                href="mailto:victor.will.chuk@gmail.com?subject=Let's%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                href="mailto:manushibombaywala0304@gmail.com?subject=Let's%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-lg flex items-center space-x-3 shadow-lg hover:shadow-xl"
               >
                 <Mail size={20} />

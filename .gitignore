@@ -8,6 +8,18 @@ cat >> .gitignore << 'EOF'
 .env.development.local
 .env.production.local
 .env.test.local
+server/.env
+client/.env
+.vercel/
+# build outputs
+dist/
+client/dist/
+# editor / OS
+.vscode/
+.DS_Store
+# vite cache
+node_modules/
+node_modules/.vite
 
 # Node / Next / build
 node_modules
